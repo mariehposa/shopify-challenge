@@ -18,7 +18,7 @@ const validation = yup.object().shape({
   title: yup.string().required('Please enter correct name!'),
 })
 
-export default function SearchForm() {
+export default function SearchForm({onSubmit}) {
   return (
     <section>
 
@@ -26,7 +26,7 @@ export default function SearchForm() {
             validationSchema= {validation}
             initialValues={initialUserForm}
             validate= {validate}
-            onSubmit={}
+            onSubmit={onSubmit}
             render={props => {
                 return (
                     <Form>
