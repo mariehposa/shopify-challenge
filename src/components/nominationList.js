@@ -7,6 +7,7 @@ const NominationList = (props) => {
 
   return (
     <div>
+      {nominations.length >= 5 && <p>Your nomination is 5</p>}
       {nominations.map((movie) => (
         <MovieCard key={movie.imdbID} action={"remove"} movie={movie} />
       ))}

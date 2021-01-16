@@ -19,7 +19,9 @@ function nominationsReducer(state = initialState, action) {
     case types.DELETE_NOMINATION:
       return {
         ...state,
-        nominations: state.nominations.filter((e) => e.id !== payload.id),
+        nominations: state.nominations.filter(
+          (e) => e.imdbID !== payload.imdbID
+        ),
       };
 
     default:
