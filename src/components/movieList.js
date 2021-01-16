@@ -7,13 +7,13 @@ const apiUrl = `http://www.omdbapi.com/?s=ash&apikey=${process.env.REACT_APP_API
 
 export default function MovieList() {
     const [ moviesList, setMoviesList ] = useState([]);
-    const [url ] = useState(apiUrl);
+    const [url, setUrl ] = useState(apiUrl);
 
     const search = (formValues, actions) =>{
-        const title = formValues.title.toLowerCase();
-        
-        const newMovies = moviesList.filter(character => `${character.first_name} ${character.last_name}`.toLowerCase().includes(title))
-        setMoviesList(newMovies)
+        const title = formValues.title
+        const newUrl = `http://www.omdbapi.com/?s=${title}&apikey=${process.env.REACT_APP_API_KEY}`
+        console.log(newUrl);
+        setUrl(newUrl)
     }
 
     useEffect(() => {
@@ -23,9 +23,9 @@ export default function MovieList() {
                 setMoviesList(res.data.Search)
             })
             .catch(err => {
-                console.log(err.message)
+                // console.log(err.message)
             })
-    }, [])
+    }, [url])
 
     return (
         <div>

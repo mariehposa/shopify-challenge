@@ -7,6 +7,7 @@ export default function MovieCard({movie}) {
             <p>{movie.Title}</p>
             <p>{movie.Year}</p>
             <p>{movie.Type}</p>
+            <button>Nominate</button>
         </div>
     )
 }

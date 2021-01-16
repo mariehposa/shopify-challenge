@@ -10,35 +10,32 @@ const validate = (formValues) => {
   const errors = {};
 
   if (!formValues.title) {
-      errors.title = 'Please enter a valid name!';
+      errors.title = 'Invalid title';
   }
 }
 
 const validation = yup.object().shape({
-  title: yup.string().required('Please enter correct name!'),
+  title: yup.string().required('Invalid title'),
 })
 
 export default function SearchForm({onSubmit}) {
   return (
-    <section>
-
-     <Formik
-            validationSchema= {validation}
-            initialValues={initialUserForm}
-            validate= {validate}
-            onSubmit={onSubmit}
-            render={props => {
-                return (
-                    <Form>
-                        <label>
-                            <input name='title' type='text' placeholder='Search for stylist...' />
-                            <ErrorMessage name='title' component='div' />
-                        </label>
-                        <button type='submit'>Search</button>
-                    </Form>
-                )
-            }}
-        />
-    </section>
+    <Formik
+        validationSchema= {validation}
+        initialValues={initialUserForm}
+        validate= {validate}
+        onSubmit={onSubmit}
+        render={props => {
+            return (
+                <Form>
+                    <label>
+                        <input name='title' type='text' placeholder='Search for stylist...' />
+                        <ErrorMessage name='title' component='div' />
+                    </label>
+                    <button type='submit'>Search</button>
+                </Form>
+            )
+        }}
+    />
   );
 }
