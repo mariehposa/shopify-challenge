@@ -6,7 +6,7 @@ export const NominationList = (props) => {
 
     return (
         <div>
-            <p>{astate.text}</p>
+            <p>{astate?.text}</p>
         </div>
     )
 }

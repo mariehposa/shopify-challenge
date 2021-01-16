@@ -5,7 +5,7 @@ import Header from './components/Header';
 import { combineReducers, compose, createStore, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
 import thunk from 'redux-thunk';
-import * as reducers from './state/reducer';
+import * as reducers from './redux/reducer';
 
 const totalReducer = combineReducers({
   aState: reducers.countReducer
