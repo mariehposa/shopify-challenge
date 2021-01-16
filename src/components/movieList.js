@@ -10,7 +10,7 @@ export default function MovieList() {
     const [url, setUrl ] = useState(apiUrl);
 
     const search = (formValues, actions) =>{
-        const title = formValues.title
+        const title = formValues.title.toLowercase();
         const newUrl = `http://www.omdbapi.com/?s=${title}&apikey=${process.env.REACT_APP_API_KEY}`
         console.log(newUrl);
         setUrl(newUrl)
