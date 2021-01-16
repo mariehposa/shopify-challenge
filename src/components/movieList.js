@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const apiUrl = `http://www.omdbapi.com/?i=tt3896198&apikey=3578d840`
+const apiUrl = `http://www.omdbapi.com/?s=ash&apikey=${process.env.REACT_APP_API_KEY}`
+
 export default function MovieList() {
     const [ movieList, setMoveList ] = useState([]);
 
     useEffect(() => {
         axios.get(apiUrl)
             .then(res => {
-                console.log(res);
+                console.log(res.data);
+                setMoveList(res.data)
             })
             .catch(err => {
                 console.log(err.message)
@@ -17,7 +19,9 @@ export default function MovieList() {
 
     return (
         <div>
-
+            {
+                movieList.map(movie => <MovieCard key={movie.id} movie={movie} />)
+            }
         </div>
     )
 }
