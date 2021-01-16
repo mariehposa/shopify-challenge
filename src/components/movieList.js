@@ -1,16 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import MovieCard from "./movieCard";
 
 const apiUrl = `http://www.omdbapi.com/?s=ash&apikey=${process.env.REACT_APP_API_KEY}`
 
 export default function MovieList() {
-    const [ movieList, setMoveList ] = useState([]);
+    const [ moviesList, setMoviesList ] = useState([]);
 
     useEffect(() => {
         axios.get(apiUrl)
             .then(res => {
                 console.log(res.data);
-                setMoveList(res.data)
+                setMoviesList(res.data.Search)
             })
             .catch(err => {
                 console.log(err.message)
@@ -20,7 +21,7 @@ export default function MovieList() {
     return (
         <div>
             {
-                movieList.map(movie => <MovieCard key={movie.id} movie={movie} />)
+                moviesList.map(movie => <MovieCard key={movie.imdbID} movie={movie} />)
             }
         </div>
     )
