@@ -1,6 +1,7 @@
 import { connect } from "react-redux";
 import { deleteNomination } from "../redux/nominations/actionCreators";
 import MovieCard from "./movieCard";
+import "../styles/movie.scss";
 
 const NominationList = (props) => {
   const { nominations } = props;

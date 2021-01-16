@@ -3,6 +3,7 @@ import {
   addNomination,
   deleteNomination,
 } from "../redux/nominations/actionCreators";
+import "../styles/movie.scss";
 
 const MovieCard = (props) => {
   const {
@@ -22,24 +23,26 @@ const MovieCard = (props) => {
   };
 
   return (
-    <div>
+    <div className="card">
       <img src={movie.Poster} alt={movie.Title} />
-      <p>{movie.Title}</p>
-      <p>{movie.Year}</p>
-      <p>{movie.Type}</p>
-      <button
-        disabled={
-          nominations.map((e) => e.imdbID).includes(movie.imdbID) &&
-          action === "add"
-        }
-        onClick={
-          action === "add"
-            ? () => handleNominate(movie)
-            : () => handleDelete(movie)
-        }
-      >
-        {action === "add" ? "Nominate" : "Remove"}
-      </button>
+      <div>
+        <p>{movie.Title}</p>
+        <p>Year: {movie.Year}</p>
+        <p>Type: {movie.Type}</p>
+        <button
+          disabled={
+            nominations.map((e) => e.imdbID).includes(movie.imdbID) &&
+            action === "add"
+          }
+          onClick={
+            action === "add"
+              ? () => handleNominate(movie)
+              : () => handleDelete(movie)
+          }
+        >
+          {action === "add" ? "Nominate" : "Remove"}
+        </button>
+      </div>
     </div>
   );
 };

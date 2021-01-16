@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import MovieCard from "./movieCard";
 import SearchForm from "./searchForm";
 import { getMovieList } from "../redux/movies/actionCreators";
+import "../styles/movie.scss";
 
 const MovieList = (props) => {
   const { fetchMovies, movieList } = props;
@@ -14,9 +15,11 @@ const MovieList = (props) => {
   return (
     <div>
       <SearchForm />
-      {movieList.map((movie) => (
-        <MovieCard key={movie.imdbID} movie={movie} />
-      ))}
+      <div className="card-pack">
+        {movieList.map((movie) => (
+          <MovieCard key={movie.imdbID} movie={movie} />
+        ))}
+      </div>
     </div>
   );
 };

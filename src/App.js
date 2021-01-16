@@ -11,8 +11,8 @@ function App() {
     <Provider store={store}>
       <div className="app">
         <Header />
-        {/* <Route path={["/", "/nomination_list"]} component={NominationList} /> */}
         <Route exact path={["/", "/movies"]} component={MovieList} />
+        <Route path="/nomination_list" component={NominationList} />
       </div>
     </Provider>
   );
