@@ -9,7 +9,7 @@ const apiUrl = `http://www.omdbapi.com/?s=ash&apikey=${process.env.REACT_APP_API
 const MovieList = (props) => {
     console.log(props)
     const { fetchMovies, movieList   } = props;
-    const [url, setUrl ] = useState(apiUrl);
+    const [ url ] = useState(apiUrl);
 
     useEffect(() => {
         fetchMovies()
@@ -32,5 +32,5 @@ const mapStateToProps = state => ({
 })
 
 export default connect(mapStateToProps, {
-    fetchMovies: getMovieList
+    fetchMovies: () =>  getMovieList()
 })(MovieList);

@@ -3,8 +3,7 @@ import MovieList from './components/movieList';
 import NominationList from './components/nominationList';
 import Header from './components/Header';
 import { Provider } from "react-redux";
-
-import store from './store'
+import store from './store';
 
 function App() {
   return (

@@ -1,4 +1,3 @@
-import React, {useState} from 'react';
 import { getMovieList } from "../redux/movies/actionCreators";
 import { connect } from "react-redux";
 
@@ -9,7 +8,6 @@ const SearchForm = (props) => {
     const handleChange = e => {
         const value = e.target.value
         fetchMovies(value)
-        console.log('search', fetchMovies(value))
     }
 
     return (
@@ -26,5 +24,5 @@ export const mapStateToProps = state => ({
 })
 
 export default connect(mapStateToProps, {
-    fetchMovies: getMovieList()
+    fetchMovies: (a) => getMovieList(a)
 })(SearchForm)
