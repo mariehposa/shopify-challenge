@@ -3,11 +3,9 @@ import { NavLink } from "react-router-dom";
 export default function Header() {
     return (
         <div>
-            <p>The Shoppies</p>
-            <div>
-                <NavLink to="/">Movie List</NavLink>
-                <NavLink to="/nomination_list">Nomination List</NavLink>
-            </div>
+            <NavLink to="/">The Shoppies</NavLink>
+            <NavLink to="/movies">Movies</NavLink>
+            <NavLink to="/nomination_list">Nominations</NavLink>
         </div>
     )
 }

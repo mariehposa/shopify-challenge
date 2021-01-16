@@ -28,11 +28,12 @@ export default function SearchForm({onSubmit}) {
         render={props => {
             return (
                 <Form>
-                    <label>
+                    <p>Results for title </p>
+                    <div>
                         <input name='title' type='text' placeholder='Search for stylist...' />
-                        <ErrorMessage name='title' component='div' />
-                    </label>
-                    <button type='submit'>Search</button>
+                        <button type='submit'>Search</button>
+                    </div>
+                    <ErrorMessage name='title' component='div' />
                 </Form>
             )
         }}
