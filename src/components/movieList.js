@@ -5,7 +5,7 @@ import SearchForm from "./searchForm";
 
 const apiUrl = `http://www.omdbapi.com/?s=ash&apikey=${process.env.REACT_APP_API_KEY}`
 
-export default function MovieList() {
+const MovieList = () => {
     const [ moviesList, setMoviesList ] = useState([]);
     const [url, setUrl ] = useState(apiUrl);
 
@@ -36,3 +36,5 @@ export default function MovieList() {
         </div>
     )
 }
+
+export default MovieList;
