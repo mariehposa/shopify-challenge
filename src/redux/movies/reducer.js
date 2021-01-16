@@ -1,13 +1,12 @@
 import * as types from "./actionTypes";
 
-const initState = {
+const initialState = {
     movieList: [],
-    searchResults: [],
     loading: false,
     error: ''
 }
 
-function movieReducer(state = initState, action) {
+function movieReducer(state = initialState, action) {
     const {type, payload} = action
     switch(type) {
         case types.GET_MOVIELIST_START:
