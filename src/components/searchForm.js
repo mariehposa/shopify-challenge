@@ -4,10 +4,6 @@ const SearchForm = () => {
 
     const [searchTerm, setSearchTerm] = useState('');
 
-    const handleInput =  (event) => {
-        event.preventDefault()
-    }
-
     const handleChange = e => {
         const value = e.target.value
         setSearchTerm(value)
@@ -15,7 +11,7 @@ const SearchForm = () => {
     }
 
     return (
-        <form onSubmit={handleInput}>
+        <form>
             <input type="text" onChange={handleChange} name="title" placeholder="search" />
         </form>
     )

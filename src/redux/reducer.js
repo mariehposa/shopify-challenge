@@ -10,6 +10,11 @@ function countReducer(state=initial, action) {
             return {
                 ...state
             }
+
+        case types.MOVIELIST:
+            return {
+                ...state
+            }
         default:
             return state
     }

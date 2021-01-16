@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import MovieCard from "./movieCard";
 import SearchForm from "./searchForm";
 
