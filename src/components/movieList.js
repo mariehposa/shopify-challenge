@@ -31,7 +31,6 @@ const mapStateToProps = state => ({
     error: state.movies.error,
 })
 
-
 export default connect(mapStateToProps, {
     fetchMovies: getMovieList
 })(MovieList);

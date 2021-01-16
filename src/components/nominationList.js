@@ -1,12 +1,12 @@
 import {connect} from 'react-redux';
-import * as actionCreators from '../redux/actionCreators';
+import * as actionCreators from '../redux/movies/actionCreators';
 
 export const NominationList = (props) => {
-    const { astate } = props;
+    const { state } = props;
 
     return (
         <div>
-            <p>{astate.text}</p>
+            <p>{state}</p>
         </div>
     )
 }

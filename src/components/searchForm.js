@@ -1,13 +1,15 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
+import { getMovieList } from "../redux/movies/actionCreators";
+import { connect } from "react-redux";
 
-const SearchForm = () => {
+const SearchForm = (props) => {
 
-    const [searchTerm, setSearchTerm] = useState('');
+    const { fetchMovies } = props;
 
     const handleChange = e => {
         const value = e.target.value
-        setSearchTerm(value)
-        console.log(value)
+        fetchMovies(value)
+        console.log('search', fetchMovies(value))
     }
 
     return (
@@ -17,4 +19,12 @@ const SearchForm = () => {
     )
 }
 
-export default SearchForm;
+export const mapStateToProps = state => ({
+    movieList: state.movies.movieList,
+    loading: state.movies.loading,
+    error: state.movies.error
+})
+
+export default connect(mapStateToProps, {
+    fetchMovies: getMovieList()
+})(SearchForm)
