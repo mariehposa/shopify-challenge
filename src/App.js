@@ -22,11 +22,13 @@ const store = createStore(
 
 function App() {
   return (
-    <div>
-      <Header />
-      <Route path={["/", "/nomination_list"]} component={NominationList} />
-      <Route exact path={["/", "/movies"]} component={MovieList} />
-    </div>
+    <Provider store={store}>
+      <div>
+        <Header />
+        <Route path={["/", "/nomination_list"]} component={NominationList} />
+        <Route exact path={["/", "/movies"]} component={MovieList} />
+      </div>
+    </Provider>
   );
 }
 
