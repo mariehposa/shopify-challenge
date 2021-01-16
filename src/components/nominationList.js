@@ -1,17 +1,25 @@
-import {connect} from 'react-redux';
-import * as actionCreators from '../redux/movies/actionCreators';
+import { connect } from "react-redux";
+import { deleteNomination } from "../redux/nominations/actionCreators";
+import MovieCard from "./movieCard";
 
-export const NominationList = (props) => {
-    const { state } = props;
+const NominationList = (props) => {
+  const { nominations, deleteNomination } = props;
 
-    return (
-        <div>
-            <p>{state}</p>
-        </div>
-    )
-}
+  return (
+    <div>
+      {nominations.map((movie) => (
+        <MovieCard key={movie.imdbID} action={"remove"} movie={movie} />
+      ))}
+    </div>
+  );
+};
 
-export default connect (
-    state => state,
-    actionCreators
-)(NominationList)
+const mapStateToProps = (state) => ({
+  nominations: state.nominations.nominations,
+  loading: state.nominations.loading,
+  error: state.nominations.error,
+});
+
+export default connect(mapStateToProps, {
+  deleteNomination: (id) => deleteNomination(id),
+})(NominationList);
