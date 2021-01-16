@@ -3,7 +3,7 @@ import { deleteNomination } from "../redux/nominations/actionCreators";
 import MovieCard from "./movieCard";
 
 const NominationList = (props) => {
-  const { nominations, deleteNomination } = props;
+  const { nominations } = props;
 
   return (
     <div>
