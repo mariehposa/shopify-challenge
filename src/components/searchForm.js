@@ -1,5 +1,6 @@
 import { getMovieList } from "../redux/movies/actionCreators";
 import { connect } from "react-redux";
+import "../styles/searchForm.scss";
 
 const SearchForm = (props) => {
   const { fetchMovies } = props;
@@ -10,12 +11,12 @@ const SearchForm = (props) => {
   };
 
   return (
-    <form>
+    <form className="form">
       <input
         type="text"
         onChange={handleChange}
         name="title"
-        placeholder="search"
+        placeholder="Movie title..."
       />
     </form>
   );
