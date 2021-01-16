@@ -4,7 +4,7 @@ const initial = {
     text: 'hello world'
 }
 
-function Reducer(state=initial, action){
+function countReducer(state=initial, action){
     switch(action.type) {
         case types.COUNT:
             return {
@@ -15,4 +15,4 @@ function Reducer(state=initial, action){
     }
 }
 
-export default Reducer
+export default countReducer
