@@ -9,7 +9,7 @@ import "./styles/header.scss";
 function App() {
   return (
     <Provider store={store}>
-      <div className="app">
+      <div>
         <Header />
         <Route exact path={["/", "/movies"]} component={MovieList} />
         <Route path="/nomination_list" component={NominationList} />
