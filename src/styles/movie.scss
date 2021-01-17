@@ -4,14 +4,30 @@
     flex-wrap: wrap;
     margin-bottom: 0;
     padding-bottom: 3rem;
+
+    @media (max-width: 500px) {
+        margin-top: 5rem;
+    }
 }
 
 .card {
     width: 22%;
     margin: 2rem 1rem;
     
+    @media (max-width: 1024px) {
+        width: 21.5%;
+    }
+
     @media (max-width: 800px) {
         width: 28%;
+    }
+
+    @media (max-width: 500px) {
+        width: 90%;
+    }
+
+    @media (min-width: 510px) and (max-width: 540px) {
+        width: 43%;
     }
 
     img {

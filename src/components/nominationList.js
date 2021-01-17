@@ -8,9 +8,10 @@ const NominationList = (props) => {
 
   return (
     <div className="nomination-list">
-      {nominations.length >= 5 ? (
+      {nominations.length === 5 ? (
         <p className="banner">
-          Yay🎉 You have nominated {nominations.length} movies🔥
+          Yay🎉 You have nominated {nominations.length} movies for The
+          Shoppies🔥
         </p>
       ) : (
         ""
