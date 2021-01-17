@@ -10,6 +10,7 @@
         font-weight: 600;
         opacity: .9;
         text-transform: uppercase;
+        font-family: 'Oswald', sans-serif;
     }
 
     div {
@@ -21,6 +22,17 @@
             color: #fff;
             margin-left: 2rem;
             font-size: 1rem;
+
+            &:hover {
+                color: #A1E500;
+                opacity: .8;
+                transition: 0.3s ease-out opacity;
+            }
+            
+            &.active {
+                color: #A1E500;
+                opacity: .9;
+            }
         }
     }
 }
