@@ -30,6 +30,7 @@ const MovieCard = (props) => {
         <p>Year: {movie.Year}</p>
         <p>Type: {movie.Type}</p>
         <button
+          className={action === "add" ? "normal-button" : "danger-button"}
           disabled={
             nominations.map((e) => e.imdbID).includes(movie.imdbID) &&
             action === "add"

@@ -9,19 +9,22 @@
 .card {
     width: 18rem;
     margin: 5px 15px;
-
+    
     img {
         height: 18rem;
         width: 100%;
     }
-
+    
     div {
         color: #fff;
         padding: 1rem;
-
+        
         p:first-child {
+            white-space: nowrap;
+            overflow: hidden;
             text-align: center;
             font-size: 1.8rem;
+            text-overflow: ellipsis;
         }
 
         p {
@@ -32,12 +35,29 @@
             border: none;
             padding: .5rem;
             border-radius: 3px;
-            background: #A1E500;
             color: #fff;
             opacity: .9;
             font-size: .9rem;
             float: right;
             cursor: pointer;
         }
+
+        button:disabled,
+        button[disabled]{
+            border: 1px solid #999999;
+            background-color: #cccccc;
+            color: #666666;
+            border-radius: 5px;
+            opacity: .5;
+            cursor: unset;
+        }
     }
+}
+
+.normal-button {
+    background: #A1E500;
+}
+
+.danger-button {
+  background: red;
 }

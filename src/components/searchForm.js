@@ -12,6 +12,7 @@ const SearchForm = (props) => {
 
   return (
     <form className="form">
+      <i class="fa fa-search"></i>
       <input
         type="text"
         onChange={handleChange}
