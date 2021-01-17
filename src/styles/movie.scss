@@ -10,6 +10,10 @@
     width: 22%;
     margin: 2rem 1rem;
     
+    @media (max-width: 800px) {
+        width: 28%;
+    }
+
     img {
         height: 18rem;
         width: 100%;
@@ -30,10 +34,18 @@
             text-align: center;
             font-size: 1.8rem;
             text-overflow: ellipsis;
+
+            @media (max-width: 800px) {
+                font-size: 1.5rem;
+            }
         }
 
         p {
             margin-bottom: .5rem;
+
+            @media (max-width: 800px) {
+                font-size: .9rem;
+            }
         }
 
         button {

@@ -19,6 +19,10 @@
         margin-top: .9rem;
         margin-left: -15rem;
 
+        @media (max-width: 800px) {
+            margin-left: 0;
+        }
+
         a {
             text-decoration: none;
             color: #fff;
