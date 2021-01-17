@@ -1,71 +1,68 @@
-# Getting Started with Create React App
+# The Shoppies (Shopify Challenge)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+My solution to shopify challenge(The Shoppies: Movie awards for entrepreneurs).
 
-## Available Scripts
+## Site Link - https://mariam-adedeji-shopify-challenge.netlify.app
 
-In the project directory, you can run:
+* **Homepage**
+![image](https://user-images.githubusercontent.com/33374159/73931951-8da93080-48d9-11ea-9792-f7c458007dfa.png)
 
-### `yarn start`
+## Table of Content
+1. [Getting started](#getting-started "Getting Started")
+* [Prerequisites](#prerequisites "Prerequisites")
+* [Installation](#installation "Installation")
+* [Enviroment variables](#enviroment-variables "Enviroment Variables")
+2. [Deployment](#deployment "Deployment")
+3. [Technology stack](#technology-stack "Technology Stack")
+4. [Author](#author "Author")
+5. [License](#license "License")
+6. [Acknowledgments](#acknowledgments "Acknowledgments")
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Getting Started
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### `yarn test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To get started with this project you need a basic knowledge of the following.
+```
+HTML
+CSS
+Javascript (ES6)
+Version Control (Git)
+```
 
-### `yarn build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* After cloning the repository, in the project directory, `cd` into `shopify-challenge` and you can run: `npm install` or `yarn install` in the console.
+* Then run `npm start` or `yarn start`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Enviroment Variables
+The following should be inside `.env` file for the app to function correctly. The apikey can be generated after signing up for the [OMDB's API](http://www.omdbapi.com/apikey.aspx).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+REACT_APP_API_KEY=apiKey
+```
 
-### `yarn eject`
+## Deployment
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* The site was deployed with [Netlify](https://mariam-adedeji-shopify-challenge.netlify.app)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Technology Stack
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+* [React](https://reactjs.org/) - The web framework used.
+* [Redux](https://redux.js.org/) - State management tool.
+* [Axios](https://www.npmjs.com/package/axios) - Promise based HTTP client for the browser and node.js.
+* [Sass](https://www.npmjs.com/package/node-sass) - Cascading stylesheet preprocessor.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Author
 
-## Learn More
+* **Mariam Adedeji** - [github](https://github.com/mariehposa)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
-### Code Splitting
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"# shopify-challenge" 
+* Shopify
