@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import MovieCard from "./movieCard";
-import SearchForm from "./searchForm";
 import { getMovieList } from "../redux/movies/actionCreators";
 import "../styles/movie.scss";
 
@@ -13,13 +12,12 @@ const MovieList = (props) => {
   }, [fetchMovies]);
 
   return (
-    <div>
-      <SearchForm />
-      <div className="card-pack">
-        {movieList.map((movie) => (
-          <MovieCard key={movie.imdbID} movie={movie} />
-        ))}
-      </div>
+    <div className="card-pack">
+      {movieList.length > 0 ? (
+        movieList.map((movie) => <MovieCard key={movie.imdbID} movie={movie} />)
+      ) : (
+        <p>Search did not have any matches</p>
+      )}
     </div>
   );
 };

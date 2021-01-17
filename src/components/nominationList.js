@@ -8,16 +8,18 @@ const NominationList = (props) => {
 
   return (
     <div className="card-pack">
-      {nominations.length >= 5 && <p className="badge">Your nomination is 5</p>}
-      {(nominations.length === 0) &
-      (
-        <p className="empty-list">
-          You haven't added any titles to your list yet
-        </p>
+      {nominations.length >= 5 ? (
+        <p className="badge">Your nomination is 5</p>
+      ) : (
+        ""
       )}
-      {nominations.map((movie) => (
-        <MovieCard key={movie.imdbID} action={"remove"} movie={movie} />
-      ))}
+      {nominations.length > 0 ? (
+        nominations.map((movie) => (
+          <MovieCard key={movie.imdbID} action={"remove"} movie={movie} />
+        ))
+      ) : (
+        <p>Your nomination list is empty</p>
+      )}
     </div>
   );
 };

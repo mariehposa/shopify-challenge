@@ -1,6 +1,8 @@
 .header {
     display: flex;
     padding-top: 1rem;
+    background: #000;
+    justify-content: space-between;
 
     .shoppies {
         margin-left: 3rem;
@@ -15,7 +17,7 @@
 
     div {
         margin-top: .9rem;
-        margin-left: 5rem;
+        margin-left: -15rem;
 
         a {
             text-decoration: none;
@@ -36,3 +38,22 @@
         }
     }
 }
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 100; /* this is optional and should be different for every project */
+  }
+
+.sticky-wrapper {
+    position: relative;
+    height: 3rem; /* We need to change this value */
+  }
+  
+  .sticky .sticky-inner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
