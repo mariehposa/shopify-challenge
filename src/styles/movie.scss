@@ -64,5 +64,29 @@
 }
 
 .danger-button {
-  background: red;
+    background: red;
+}
+
+.empty-result {
+    color: rgb(148, 148, 148);
+    margin: 0 auto;
+    font-size: .9rem;
+    opacity: .8;
+    margin-top: 5rem;
+}
+
+.banner {
+    color: #fff;
+    padding: .5rem 1rem;
+    background: #c43256;
+    width: 20rem;
+    align-self: center;
+    text-align: center;
+    border-radius: 50px;
+    margin-top: 3rem;
+}
+
+.nomination-list {
+    display: flex;
+    flex-direction: column;
 }

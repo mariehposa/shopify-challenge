@@ -16,7 +16,7 @@ const MovieList = (props) => {
       {movieList.length > 0 ? (
         movieList.map((movie) => <MovieCard key={movie.imdbID} movie={movie} />)
       ) : (
-        <p>Search did not have any matches</p>
+        <p className="empty-result">Search did not have any matches</p>
       )}
     </div>
   );

@@ -7,19 +7,23 @@ const NominationList = (props) => {
   const { nominations } = props;
 
   return (
-    <div className="card-pack">
+    <div className="nomination-list">
       {nominations.length >= 5 ? (
-        <p className="badge">Your nomination is 5</p>
+        <p className="banner">
+          Yay🎉 You have nominated {nominations.length} movies🔥
+        </p>
       ) : (
         ""
       )}
-      {nominations.length > 0 ? (
-        nominations.map((movie) => (
-          <MovieCard key={movie.imdbID} action={"remove"} movie={movie} />
-        ))
-      ) : (
-        <p>Your nomination list is empty</p>
-      )}
+      <div className="card-pack">
+        {nominations.length > 0 ? (
+          nominations.map((movie) => (
+            <MovieCard key={movie.imdbID} action={"remove"} movie={movie} />
+          ))
+        ) : (
+          <p className="empty-result">Your nomination list is empty</p>
+        )}
+      </div>
     </div>
   );
 };
