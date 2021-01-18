@@ -5,7 +5,7 @@ My solution to shopify challenge(The Shoppies: Movie awards for entrepreneurs).
 ## Site Link - https://mariam-adedeji-shopify-challenge.netlify.app
 
 * **Homepage**
-![image](https://user-images.githubusercontent.com/33374159/73931951-8da93080-48d9-11ea-9792-f7c458007dfa.png)
+![image](https://user-images.githubusercontent.com/33374159/104861421-188b0b80-5930-11eb-97e7-a67e53730dcb.png)
 
 ## Table of Content
 1. [Getting started](#getting-started "Getting Started")
@@ -14,9 +14,8 @@ My solution to shopify challenge(The Shoppies: Movie awards for entrepreneurs).
 * [Enviroment variables](#enviroment-variables "Enviroment Variables")
 2. [Deployment](#deployment "Deployment")
 3. [Technology stack](#technology-stack "Technology Stack")
-4. [Author](#author "Author")
-5. [License](#license "License")
-6. [Acknowledgments](#acknowledgments "Acknowledgments")
+4. [License](#license "License")
+5. [Acknowledgments](#acknowledgments "Acknowledgments")
 
 ## Getting Started
 
@@ -54,10 +53,6 @@ REACT_APP_API_KEY=apiKey
 * [Redux](https://redux.js.org/) - State management tool.
 * [Axios](https://www.npmjs.com/package/axios) - Promise based HTTP client for the browser and node.js.
 * [Sass](https://www.npmjs.com/package/node-sass) - Cascading stylesheet preprocessor.
-
-## Author
-
-* **Mariam Adedeji** - [github](https://github.com/mariehposa)
 
 ## License
 
