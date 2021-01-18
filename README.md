@@ -52,6 +52,7 @@ REACT_APP_API_KEY=apiKey
 * [Redux](https://redux.js.org/) - State management tool.
 * [Axios](https://www.npmjs.com/package/axios) - Promise based HTTP client for the browser and node.js.
 * [Sass](https://www.npmjs.com/package/node-sass) - Cascading stylesheet preprocessor.
+* [React-loader-spinner](https://www.npmjs.com/package/react-loader-spinner) - For async await operation before data loads to the view.
 
 ## Acknowledgments
 
