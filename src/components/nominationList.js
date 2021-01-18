@@ -7,7 +7,7 @@ const NominationList = (props) => {
   const { nominations } = props;
 
   return (
-    <div className="nomination-list">
+    <div className="list">
       {nominations.length === 5 ? (
         <p className="banner">
           Yay🎉 You have nominated {nominations.length} movies for The

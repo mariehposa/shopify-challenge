@@ -32,8 +32,10 @@ const MovieCard = (props) => {
         <button
           className={action === "add" ? "normal-button" : "danger-button"}
           disabled={
-            nominations.map((e) => e.imdbID).includes(movie.imdbID) &&
-            action === "add"
+            nominations.map((e) => e.imdbID).includes(movie.imdbID) ||
+            nominations.length === 5
+              ? action === "add"
+              : ""
           }
           onClick={
             action === "add"
