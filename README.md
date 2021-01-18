@@ -14,8 +14,7 @@ My solution to shopify challenge(The Shoppies: Movie awards for entrepreneurs).
 * [Enviroment variables](#enviroment-variables "Enviroment Variables")
 2. [Deployment](#deployment "Deployment")
 3. [Technology stack](#technology-stack "Technology Stack")
-4. [License](#license "License")
-5. [Acknowledgments](#acknowledgments "Acknowledgments")
+4. [Acknowledgments](#acknowledgments "Acknowledgments")
 
 ## Getting Started
 
@@ -53,10 +52,6 @@ REACT_APP_API_KEY=apiKey
 * [Redux](https://redux.js.org/) - State management tool.
 * [Axios](https://www.npmjs.com/package/axios) - Promise based HTTP client for the browser and node.js.
 * [Sass](https://www.npmjs.com/package/node-sass) - Cascading stylesheet preprocessor.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Acknowledgments
 
