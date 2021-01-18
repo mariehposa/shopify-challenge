@@ -1,3 +1,4 @@
+import React from "react";
 import { connect } from "react-redux";
 import { deleteNomination } from "../redux/nominations/actionCreators";
 import MovieCard from "./movieCard";

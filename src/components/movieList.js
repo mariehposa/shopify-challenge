@@ -15,7 +15,7 @@ const MovieList = (props) => {
     <div className="list">
       {nominations.length === 5 ? (
         <p className="banner">
-          ⚠️You've reached the maximum number of nominations.
+          {"⚠️You've reached the maximum number of nominations."}
         </p>
       ) : null}
       <div className="card-pack">

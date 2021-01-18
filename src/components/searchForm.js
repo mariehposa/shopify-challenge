@@ -1,3 +1,4 @@
+import React from "react";
 import { getMovieList } from "../redux/movies/actionCreators";
 import { connect } from "react-redux";
 import "../styles/searchForm.scss";

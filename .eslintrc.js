@@ -16,5 +16,6 @@ module.exports = {
     "no-console": 0,
     "no-empty": 0,
     "no-irregular-whitespace": 0,
+    "react/prop-types": "off",
   },
 };
