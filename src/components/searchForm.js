@@ -12,8 +12,11 @@ const SearchForm = (props) => {
   };
 
   return (
-    <form className="form">
-      <i class="fa fa-search"></i>
+    <form
+      style={{ visibility: props.hidden ? "hidden" : "visible" }}
+      className="form"
+    >
+      <i className="fa fa-search"></i>
       <input
         type="text"
         onChange={handleChange}
@@ -26,8 +29,6 @@ const SearchForm = (props) => {
 
 export const mapStateToProps = (state) => ({
   movieList: state.movies.movieList,
-  loading: state.movies.loading,
-  error: state.movies.error,
 });
 
 export default connect(mapStateToProps, {
