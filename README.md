@@ -1,8 +1,5 @@
-# The Shoppies (Shopify Challenge)
-
-My solution to shopify challenge(The Shoppies: Movie awards for entrepreneurs).
-
-## Site Link - https://mariam-adedeji-shopify-challenge.netlify.app
+# The Shoppies
+Movie awards for entrepreneurs.
 
 * **Homepage**
 ![image](https://user-images.githubusercontent.com/33374159/104861421-188b0b80-5930-11eb-97e7-a67e53730dcb.png)
